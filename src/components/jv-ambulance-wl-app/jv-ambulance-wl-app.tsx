@@ -54,6 +54,7 @@ export class JvAmbulanceWlApp {
         <Host>
         { element === "editor"
         ? <jv-ambulance-wl-editor entry-id={entryId}
+            ambulance-id={this.ambulanceId} api-base={this.apiBase}
             oneditor-closed={ () => navigate("./list")} >
           </jv-ambulance-wl-editor>
          : <jv-ambulance-wl-list  ambulance-id={this.ambulanceId} api-base={this.apiBase}
